@@ -55,7 +55,7 @@ public class PasswordGenerator {
     }
 
     private String generatePassword(int length) {
-        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@.";
         Random random = new Random();
         StringBuilder sb = new StringBuilder();
 
@@ -66,4 +66,6 @@ public class PasswordGenerator {
 
         return sb.toString();
     }
+
+
 }
